@@ -23,7 +23,7 @@ import React, { useState} from "react";
           < input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
            <button onClick={handleTodo} >
             {editIndex !== null ? 'Update' : 'Add'}
-           </button>
+           </button>  
 
            <ul>
                 {todos.map((todo, index) => (
