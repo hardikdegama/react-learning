@@ -1,9 +1,24 @@
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
   
  const Todo = () => {
     const [todos, setTodos] = useState([]);
     const [inputValue, setInputValue] = useState('');
     const [editIndex, setEditIndex] = useState(null);
+
+
+     useEffect( ()=>{
+        alert("ADD THE NEW VALUE.");
+     },[todos] )
+
+    
+     useEffect( ()=>{
+      alert ("YOU CAN CHANGE A  INPUT TEXT. ")
+     },[ editIndex] )
+
+     
+
+
+
 
      const handleTodo = () => {
         if (!inputValue.trim()) return;

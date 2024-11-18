@@ -1,10 +1,8 @@
-// src/Simple.jsx
 import React, { useState, useContext } from 'react';
 
-// Create a context
+
 const AuthContext = React.createContext();
 
-// Create a provider component
 const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -18,7 +16,6 @@ const AuthProvider = ({ children }) => {
   );
 };
 
-// Create a component that consumes the context
 const AuthStatus = () => {
   const { isAuthenticated, login, logout } = useContext(AuthContext);
 
@@ -33,6 +30,4 @@ const AuthStatus = () => {
     </div>
   );
 };
-
-// Export the provider and the consumer component
 export { AuthProvider, AuthStatus };

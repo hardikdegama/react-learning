@@ -1,18 +1,19 @@
 
 import React   from 'react';
-import ParentComponent from './Component/ParentComponent';
-import Todo from './Component/TodoList';
-import { AuthProvider, AuthStatus } from './Component/SimpleContax';
+import Calculator from './Component/CalcuLator';
+import ButtonClickChangeValue from './Component/ButtonClickGetValue';
+import ToggleSwitch from './Component/ChangeThem';
 
 function App() {
   return (
       <>
-       <ParentComponent />    
-       <Todo />
-       <AuthProvider>
-      <AuthStatus/>
-    </AuthProvider>
+      
+
+    < Calculator />
+  < ButtonClickChangeValue />
+  < ToggleSwitch/>
       </>
+
   );
 }
 
