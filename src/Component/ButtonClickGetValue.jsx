@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 
-function ButtonClickChangeValue() {
+function ExampleofauseRef() {
     const inputvalue = useRef(null);
     
     function Value() {
         inputvalue.current.value = "Hello World.";
-       // inputvalue.current.value.focus();
+       
        inputvalue.current.focus();
        inputvalue.current.style.color = 'red'; 
         
@@ -21,4 +21,4 @@ function ButtonClickChangeValue() {
     );
 }
 
-export default ButtonClickChangeValue;
+export default ExampleofauseRef;
