@@ -1,15 +1,14 @@
 import React from 'react';
-import Calculator from './AllHooks/CalculatoruseEFfect';
-import Timer from './AllHooks/Counter';
+import { AuthProvider } from './AllHooks/useContextexample';
+import Login from './AllHooks/useContextexample'; 
 
-
-function App() {
-  return (
-    <>
-    <Calculator/>
- < Timer/>
-    </>
-  );
-}
+const App = () => {
+    return (
+        <AuthProvider>
+            <h1>Login Page</h1>
+            <Login />
+        </AuthProvider>
+    );
+};
 
 export default App;
