@@ -1,0 +1,113 @@
+/* Gradient Animation */
+@keyframes backgroundChange {
+    0% {
+        background-color: #1e90ff; /* Initial color */
+    }
+    25% {
+        background-color: #00bcd4; /* Color after 1.25 seconds */
+    }
+    50% {
+        background-color: #ff6f91; /* Color after 2.5 seconds */
+    }
+    75% {
+        background-color: #ffeb3b; /* Color after 3.75 seconds */
+    }
+    100% {
+        background-color: #1e90ff; /* Reset to initial color after 5 seconds */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease; 
+    animation: backgroundChange 5s ease infinite; 
+}
+
+/* Calculator Container */
+.calculator-container {
+    background: #e0e0e0;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%; /* Ensure it takes the full width */
+    height: 60%; /* Limit the height to 60% of the screen */
+    min-width: 300px; /* Set a minimum width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, background 0.5s ease;
+}
+
+/* Title Styling */
+.calculator-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.calculator-input {
+    width: 100px;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background: #f7f7f7;
+    color: #333333;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+    transition: background 0.5s ease, color 0.5s ease;
+    white-space: 5px;
+    gap: 20%;
+}
+
+/* Dropdown Select */
+.calculator-select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background: #f7f7f7;
+    color: #333333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+                -2px -2px 5px rgba(255, 255, 255, 0.7);
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Buttons */
+.submit-button,
+.theme-toggle {
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #007bff;
+    color: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2),
+                -2px -2px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 0.5s ease, color 0.5s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        background: linear-gradient(145deg, #0056b3, #003e80);
+    }
+}
+
+
+.result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}

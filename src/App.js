@@ -1,12 +1,13 @@
 import React from 'react';
-import SimpleEcommerce from './AllHooks/Shopping';
+import Calculator from './AllHooks/CalculatoruseEFfect';
+import Timer from './AllHooks/Counter';
 
 
 function App() {
   return (
     <>
-    < SimpleEcommerce />
- 
+    <Calculator/>
+ < Timer/>
     </>
   );
 }
